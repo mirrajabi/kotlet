@@ -4,7 +4,6 @@ import android.app.Application
 import android.content.Context
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import com.securepreferences.SecurePreferences
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -15,10 +14,6 @@ class ApplicationModule(private val app: Application) {
     @Provides
     @Singleton
     fun provideApplication() = app
-
-    @Provides
-    @Singleton
-    fun provideSharedPreferences(application: Application) = SecurePreferences(application)
 
     @Provides
     @Singleton

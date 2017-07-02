@@ -30,20 +30,13 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
-ext{
+ext {
     supportLibraryVersion = '26.+'
-    googlePlayVersion = '10.0.1'
     javaxAnnotationVersion = '1.0'
     retrofitVersion = '2.1.0'
     okHttpVersion = '3.5.0'
     daggerVersion = '2.8'
-    leakCanaryVersion = '1.5'
-    butterknifeVersion = '8.4.0'
-    eventBusVersion = '3.0.0'
-    parcelerVersion = '1.1.6'
-    dartVersion = '2.0.1'
     rxJavaVersion = '2.0.2'
     rxAndroidVersion = '2.0.1'
     gsonVersion = '2.8.0'
-    glideVersion = '3.7.0'
 }
