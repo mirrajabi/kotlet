@@ -20,7 +20,7 @@ class NetModule(private val mBaseUrl: String) {
 
     @Provides
     @Singleton
-    fun provideOkHttp(cache: Cache) =
+    fun provideOkHttp(cache: Cache) : OkHttpClient =
             OkHttpClient.Builder()
                 .cache(cache)
                 .readTimeout(DEFAULT_OK_HTTP_REQUEST_TIMEOUT_SECONDS.toLong(), TimeUnit.SECONDS)
@@ -30,7 +30,7 @@ class NetModule(private val mBaseUrl: String) {
 
     @Provides
     @Singleton
-    fun provideRetrofit(okHttpClient: OkHttpClient) =
+    fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit =
             Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())

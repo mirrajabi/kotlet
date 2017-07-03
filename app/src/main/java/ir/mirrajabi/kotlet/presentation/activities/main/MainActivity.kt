@@ -11,7 +11,7 @@ import ir.mirrajabi.kotlet.presentation.adapters.PostAdapter
 import ir.mirrajabi.kotlet.presentation.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : BaseActivity<MainPresenter>() , MainView {
+class MainActivity : BaseActivity<MainPresenter>() , MainView{
     var adapter : PostAdapter? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

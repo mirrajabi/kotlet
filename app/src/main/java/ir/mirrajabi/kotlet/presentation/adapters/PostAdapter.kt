@@ -9,9 +9,16 @@ import kotlinx.android.synthetic.main.item_post.view.*
 class PostAdapter : BaseQuickAdapter<PostModel, BaseViewHolder>{
     constructor(layoutResId: Int) : super(layoutResId)
 
-    override fun convert(helper: BaseViewHolder?, item: PostModel?) {
-        helper?.setText(R.id.txtTitle, item?.title)
-        //Or this approach
-        helper?.getConvertView()?.txtBody?.text = item?.body
+    override fun convert(holder: BaseViewHolder?, item: PostModel?) {
+        bind(holder, item)
     }
+}
+/*
+ * This function is an extension for PostAdapter just to demonstrate
+ * how the extensions work
+ */
+fun PostAdapter.bind(holder: BaseViewHolder?, item: PostModel?): Unit {
+    holder?.setText(R.id.txtTitle, item?.title + item?.getIdsString())
+    //Or this approach
+    holder?.getConvertView()?.txtBody?.text = item?.body
 }

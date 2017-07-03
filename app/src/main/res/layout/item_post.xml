@@ -17,8 +17,7 @@
         android:lines="1"
         android:maxLines="1"
         android:textColor="#0b0b0b"
-        android:textSize="18sp"
-        app:fontFamily="serif-monospace"/>
+        android:textSize="18sp"/>
 
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/txtBody"
@@ -26,8 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:lines="3"
-        android:maxLines="3"
-        app:fontFamily="serif"/>
+        android:maxLines="3"/>
 
     <View
         android:layout_width="match_parent"
