@@ -11,23 +11,32 @@
     android:paddingTop="6dp">
 
     <android.support.v7.widget.AppCompatTextView
-        android:id="@+id/txtTitle"
+        android:id="@+id/txtName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:lines="1"
         android:maxLines="1"
         android:textColor="#0b0b0b"
         android:textSize="18sp"
-        app:fontFamily="sans-serif-smallcaps"/>
+        app:fontFamily="serif"/>
 
     <android.support.v7.widget.AppCompatTextView
-        android:id="@+id/txtBody"
+        android:id="@+id/txtEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:lines="3"
-        android:maxLines="3"
-        app:fontFamily="sans-serif-condensed"/>
+        android:lines="1"
+        android:maxLines="1"
+        android:textSize="12sp"
+        app:fontFamily="sans-serif"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="20sp"
+        app:fontFamily="cursive"/>
 
     <View
         android:layout_width="match_parent"

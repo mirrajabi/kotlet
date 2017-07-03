@@ -21,7 +21,9 @@ class MainPresenter : BasePresenter {
         service.getPosts()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe({items-> view.bindData(items = items)})
-        // OR   .subscribe({view.bindData(items = it)})
+                .retry(3)
+                .subscribe({items-> view.bindData(items = items)},
+                        // OR   .subscribe({view.bindPost(items = it)})
+                        {t->t.printStackTrace()})
     }
 }

@@ -16,6 +16,7 @@ class PostAdapter : BaseQuickAdapter<PostModel, BaseViewHolder>{
 /*
  * This function is an extension for PostAdapter just to demonstrate
  * how the extensions work
+ * I didn't want to move this to a separate extension file. Its fine here, so let it be...
  */
 fun PostAdapter.bind(holder: BaseViewHolder?, item: PostModel?): Unit {
     holder?.setText(R.id.txtTitle, item?.title + item?.getIdsString())

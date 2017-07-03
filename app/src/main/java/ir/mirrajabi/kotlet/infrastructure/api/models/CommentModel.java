@@ -13,7 +13,7 @@ public class CommentModel {
     @SerializedName("email")
     private String mEmail;
     @SerializedName("body")
-    private String mData;
+    private String mMessage;
 
     public int getPostId() {
         return mPostId;
@@ -51,12 +51,12 @@ public class CommentModel {
         return this;
     }
 
-    public String getData() {
-        return mData;
+    public String getMessage() {
+        return mMessage;
     }
 
-    public CommentModel setData(String data) {
-        mData = data;
+    public CommentModel setMessage(String message) {
+        mMessage = message;
         return this;
     }
 }

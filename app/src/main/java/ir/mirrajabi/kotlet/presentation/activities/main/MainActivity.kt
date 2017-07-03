@@ -8,6 +8,7 @@ import ir.mirrajabi.kotlet.R
 import ir.mirrajabi.kotlet.infrastructure.api.models.PostModel
 import ir.mirrajabi.kotlet.infrastructure.di.components.DaggerMainComponent
 import ir.mirrajabi.kotlet.infrastructure.di.modules.MainModule
+import ir.mirrajabi.kotlet.infrastructure.extensions.startActivity
 import ir.mirrajabi.kotlet.presentation.adapters.PostAdapter
 import ir.mirrajabi.kotlet.presentation.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -44,6 +45,12 @@ class MainActivity : BaseActivity<MainPresenter>() , MainView {
         recyclerView.layoutManager =
                 LinearLayoutManager(this@MainActivity, LinearLayoutManager.VERTICAL, false)
         adapter = PostAdapter(R.layout.item_post)
+        adapter?.setOnItemClickListener { a, v, position ->
+            // This is a good one
+            // We made this extension in UIExtension.kt classs
+            startActivity(clazz=PostActivity::class.java,
+                          id = (a as PostAdapter).getItem(position).id)
+        }
         recyclerView.adapter = adapter
         presenter.fetchPosts()
     }
