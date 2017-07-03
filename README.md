@@ -1,14 +1,16 @@
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/8886687/27769178-68ca1c8e-5f39-11e7-9345-cd6560c71ace.png"/>
-</p>
-
 # Kotlet
+
+[![CircleCI](https://circleci.com/gh/mirrajabi/kotlet.svg?style=svg)](https://circleci.com/gh/mirrajabi/kotlet)
 
 > Kotlet or Cutlet... Whatever... Its delicious!
 > 
 > *("کتلت" : Persian word for cutlet)*
-> 
-> PS : It's not a cutlet, its a hamburger. I know.. I couldn't find any good icon of it online.. so yeah! It is what it is.. try to live with it.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/8886687/27769178-68ca1c8e-5f39-11e7-9345-cd6560c71ace.png"/>
+  <br>
+  <blockquote>It's not a cutlet, its a hamburger. I know.. I couldn't find any good icon of it online.. so yeah! It is what it is.. try to live with it.</blockquote><br><br>
+</p>
 
 This repo is a sample android application made by Kotlin and ***only one Java POJO file*** for the ones who love Kotlin but don't want to leave Java.
 The base idea was to make a sample application using Kotlin lang with the following features:
