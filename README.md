@@ -22,8 +22,8 @@ The base idea was to make a sample application using Kotlin lang with the follow
 
 ### Project structure
 <div>
-  <img style="width:50%;" src="https://user-images.githubusercontent.com/8886687/27769308-6327e92a-5f3c-11e7-80a1-8dfd1b70ca48.PNG"/>
-  <img style="width:50%;" src="https://user-images.githubusercontent.com/8886687/27769309-6330adf8-5f3c-11e7-91c7-8bc92b6d6bc3.PNG"/>
+  <img style="width:50%;" src="https://user-images.githubusercontent.com/8886687/27787345-ace8b946-5ff9-11e7-9717-dbb565907e96.PNG"/>
+  <img style="width:50%;" src="https://user-images.githubusercontent.com/8886687/27787346-acf08540-5ff9-11e7-9f3c-243c17ec61ba.PNG"/>
 </div>
 Its more about the kotlin lang itself and how to use these libraries with it. no fancy ui implemented yet but may be in future.
 I will add more features soon.
