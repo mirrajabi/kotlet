@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -14,20 +13,20 @@
         android:id="@+id/txtTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
         android:lines="1"
         android:maxLines="1"
         android:textColor="#0b0b0b"
-        android:textSize="18sp"
-        app:fontFamily="sans-serif-smallcaps"/>
+        android:textSize="18sp"/>
 
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/txtBody"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-condensed"
         android:lines="3"
-        android:maxLines="3"
-        app:fontFamily="sans-serif-condensed"/>
+        android:maxLines="3"/>
 
     <View
         android:layout_width="match_parent"

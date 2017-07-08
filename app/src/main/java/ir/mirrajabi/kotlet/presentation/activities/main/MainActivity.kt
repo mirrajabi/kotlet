@@ -45,7 +45,7 @@ class MainActivity : BaseActivity<MainPresenter>() , MainView {
         recyclerView.layoutManager =
                 LinearLayoutManager(this@MainActivity, LinearLayoutManager.VERTICAL, false)
         adapter = PostAdapter(R.layout.item_post)
-        adapter?.setOnItemClickListener { a, v, position ->
+        adapter?.setOnItemClickListener { a, _, position ->
             // This is a good one
             // We made this extension in UIExtension.kt classs
             startActivity(clazz=PostActivity::class.java,
